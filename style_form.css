@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background: f2d6f2rgb(246, 211, 211);
+    color: rgb(76, 73, 73);
+    position: absolute;
+    align-items: center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.form_fmb{
+    font-size: 15px;
+    background: rgb(248, 246, 246);
+    color: black;
+    /* position: absolute; */
+    padding: auto;
+}
+
+.table {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    padding-bottom: 20px;
+
+}
