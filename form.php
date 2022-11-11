@@ -6,7 +6,7 @@
 
     if(isset($_POST['submit']))
     {
-        $id_kategori = $_POST['id_kategori'];
+        $id_kategori = $_POST['kategori'];
         $nama = $_POST['merk_tas'];
         $deskripsi_tas = $_POST['deskripsi_tas'];
         $warna = $_POST['warna'];
@@ -46,13 +46,25 @@
 
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
-    <head>
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Feel My Bag</title>
-        <link rel = "stylesheet" href = "style_form.css">
-    </head>
-    <body>
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Feel My Bag</title>
+    <link rel = "stylesheet" href = "style_form.css">
+</head>
+<body>  
+    <div class="wrapper">
+        <div class="header">
+            <h1 id="FMBW">Feel My Bag</h1>
+        </div>
+        <div class="menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="aboutus.html">keranjang</a></li>
+            <li><a href="aboutus.html">about us</a></li>
+            <li><a href="logout.php">LOGOUT</a></li>
+        </div>
+    </div>
         <div class="container">
             <h2>Tambah Data Produk Feel My Bag</h2>
             <div class="form_fmb">
@@ -72,7 +84,7 @@
                                     $kategori = mysqli_query($db, "SELECT * FROM kategori ORDER BY id_kategori DESC");
                                     while($r = mysqli_fetch_array($kategori)){
                                 ?>
-                                <option value="<?php echo $r['id_kategori']?>"><?php echo $r['nama_kategori']?></option>
+                                <option value="<?php echo $r['id_kategori']?>"> <?php echo $r['nama_kategori']?></option>
                                 <?php } ?>
                             </select>
                         </td>
@@ -114,5 +126,5 @@
                 </table>
             </form>
         </div>
-    </body>
+</body>
 </html>
