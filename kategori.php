@@ -46,6 +46,7 @@
                     <?php
                         $id_kategori = 1;
                         $kategori = mysqli_query($db, "SELECT * FROM kategori ORDER BY id_kategori DESC");
+                        if(mysqli_num_rows($kategori)> 0){
                         while($row = mysqli_fetch_array($kategori)){
                     ?>
                     <tr>
@@ -54,7 +55,11 @@
                         <td><center><a class = "" a href="edit_kategori.php?id_kategori=<?=$row['id_kategori']?>">Edit</i></a></center></td>
                         <td><center><a class = "" a href="delete_kategori.php?id_kategori=<?=$row['id_kategori']?>" onclick="return confirm('Yakin ingin hapus?')">Hapus</a></center></td>
                     </tr>
-                    <?php $id_kategori++;} ?>
+                    <?php $id_kategori++;}}else{ ?>
+                        <tr>
+                            <td colspan="4"><center>Tidak Ada Data</center></td>
+                        </tr>
+                    <?php } ?>
                 </tbody>
             </table>
         </div>
