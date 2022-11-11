@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#FMBW {
+    align-items: center;
+    justify-content: space-between;
+    top: 70px;
+    margin: 0;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000106;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    border: 5px;
+    border-color: #000106;
+    background-color: #f1f1f1;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);;
+    background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2)50%), url();
+}
+
+.add a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 25%;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(246, 207, 246);
+}
+
+.edit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 80%;
+    padding: 3px;
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: rgb(33, 33, 33);
+}
+
+.del a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 80%;
+    padding: 3px;
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: rgb(33, 33, 33);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 85%;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    background-color: rgb(246, 207, 246);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(90deg, rgba(230, 230, 230, 0.4) 0%, rgba(255, 255, 255, 0.7) 50%);
+    background-repeat: repeat-y;
+    background-size: cover; 
+    display: block;
+    font-size: medium;
+}
+
+form{
+    padding: 10px 19px 40px; 
+    /* margin-left: 40%; */
+    color: black;
+}
+
+button{
+    position: relative;
+    padding: 6px 16px;
+    border: 2px solid rgb(209, 195, 195);
+    background-color: rgb(211, 211, 195);
+}
+
+button:hover{
+    background-color: black;
+    color: bisque;
+    transition: 0.4s ease;
+}
+
+.outer-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: rgb(209, 220, 230);
+    background-color: rgb(40, 39, 39);
+} 
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 100%;
+
+}
+
+.navbar ul{
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 800px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'raleway', sans-serif;
+    padding: 20px 20px;
+    line-height: 10px;
+    margin: 0;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(240, 225, 198);
+    padding: 10px 10px;
+    transition: 0.7s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: bisque;
+    color: black;
+}
+
+.navbar.active a{
+    background-color:  bisque;
+    color: black;
+}
+
+ .main button{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12 px;
+    border: none;
+    border-radius: 5px;
+    line-height: 7px;
+}
