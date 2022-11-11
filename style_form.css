@@ -15,6 +15,8 @@ body{
     align-items: center;
 }
 
+
+
 tbody {
     display: table-row-group;
     vertical-align: middle;
@@ -72,11 +74,18 @@ tbody {
 
 .container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
+
+.container h2 {
+    padding: 20px;
+    align-items: center;
+    height: inherit;
+}
+
 
 .form_fmb{
     font-size: 15px;
@@ -84,13 +93,22 @@ tbody {
     color: black;
     /* position: absolute; */
     padding: auto;
+    padding:40px 80px; 
+    background-color:#009900;
+    color:#fff;
+    border-radius:2px;
+    text-decoration:none
 }
 
 .table {
     padding: 10px;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    width: 100%;
 }
 
-.container h2 {
-    padding: 20px;
-    align-items: center;
-}
+
