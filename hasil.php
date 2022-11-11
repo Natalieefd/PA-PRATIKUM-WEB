@@ -64,7 +64,7 @@
                     ?>
                     <tr>
                         <td><center><?=$id_tas; ?></center></td>
-                        <td><center><?=$row['id_kategori']?></center></td>
+                        <td><center><?=$row['nama_kategori']?></center></td>
                         <td><center><?=$row['merk_tas']?></center></td>
                         <td><center><?=$row['deskripsi_tas']?></center></td>
                         <td><center><?=$row['warna']?></center></td>

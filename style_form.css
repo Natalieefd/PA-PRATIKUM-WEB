@@ -74,10 +74,9 @@ tbody {
 
 .container {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* height: 100vh; */
 }
 
 .container h2 {
@@ -89,16 +88,15 @@ tbody {
 
 .form_fmb{
     font-size: 15px;
-    background: rgb(248, 246, 246);
-    color: black;
-    /* position: absolute; */
+    /* background: rgb(248, 246, 246); */
     padding: auto;
     padding:40px 80px; 
     background-color:#009900;
-    color:#fff;
     border-radius:2px;
     text-decoration:none
 }
+
+
 
 .table {
     padding: 10px;
