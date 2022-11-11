@@ -22,12 +22,13 @@
         </div>
         <div class="menu">
             <li><a href="index.html">home</a></li>
-            <li><a href="product.html">product</a></li>
+            <li><a href="product.php">product</a></li>
             <li><a href="aboutus.html">keranjang</a></li>
             <li><a href="aboutus.html">about us</a></li>
             <li><a href="logout.php">LOGOUT</a></li>
         </div>
     </div>
+    
     <div class="container">
         <div class="content">
             <div class="struk">
