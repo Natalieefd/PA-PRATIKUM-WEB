@@ -11,7 +11,19 @@
     <div class="container">
         <div class="content-box">
             <div class="title">
-                <h1><b>login customer feel my bag</b></h2>
+                <h1 id = "title" ><b>login customer feel my bag</b></h2>
+                <script>
+                    document.getElementById("title").addEventListener("mouseenter", mouseEnter);
+                    document.getElementById("title").addEventListener("mouseleave", mouseLeave);
+
+                    function mouseEnter(){
+                        document.getElementById("title").style.color="blue";
+                    }
+
+                    function mouseLeave(){
+                        document.getElementById("title").style.color = "black";
+                    }
+                </script>
             </div>
             <div class="box">
                 <form method="POST" action="">
@@ -33,13 +45,15 @@
         </div>
     </div>
     <div class = "outer-footer">
-        Copyright &copy; 2022 Desgin by SherinaLaraswati
+        Copyright &copy; 2022 Desgin by Feel My Bag Team
     </div>
 </body>
 </html>
 
 <?php
     require 'koneksi.php';
+
+    session_start();
     if(isset($_POST['registrasi'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
