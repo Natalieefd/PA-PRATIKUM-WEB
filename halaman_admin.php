@@ -17,22 +17,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style1.css">
     <title>Feel My Bag</title>
 </head>
 
 <body>
     <section>
         <header class="container">
-            <nav>
-                <h1 onclick="return warna_nama()" id="FMBW">Feel My Bag</h1>
-                <ul>
+            <div class="wrapper">
+                <div class="header">
+                    <h1 id="FMBW">Feel My Bag</h1>
+                </div>
+                <div class="menu">
                     <li><a href="product.php">Product</a></li>
-                    <li><a href="aboutus.php">About us</a></li>
-                    <!-- <li><a href="#" onclick="return tidak_ada()">Sign up/log in</a></li> -->
-                    <li><a href="hasil.php">Pendataan Produk</a></li>
-                    <li><a href="logout.php">Logout</a></li>
-                </ul>
+                    <li><a href="hasil.php">Data Produk</li>
+                    <li><a href="kategori.php">Data kategori</a></li>
+                    <li><a href="struct.php">Struk</a></li>
+                    <li><a href="logout.php">LOGOUT</a></li>
+                </div>
+            </div>
                 <img src="moon.png" id="icon">
             </nav>
             <div class="header_main">
