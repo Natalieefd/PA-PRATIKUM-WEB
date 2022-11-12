@@ -1,19 +1,3 @@
-<?php
-   session_start();
-
-   include 'koneksi.php';
-   if(!isset($_SESSION['login'])){
-       echo "<script>
-               alert('Akses ditolak, silahkan login dulu');
-               document.location.href = 'register.php';
-           </script>";
-   }else{
-       $username = $_SESSION['register'];
-   }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +31,7 @@
             <div class="kat-text"><h3>Kategori</h3></div>
             <div class="kategori-box">
                 <?php
+                    include 'koneksi.php';
                     $kategori = mysqli_query($db, "SELECT * FROM kategori ORDER BY id_kategori");
                     if($kategori->num_rows > 0){
                         while($l = mysqli_fetch_array($kategori)){

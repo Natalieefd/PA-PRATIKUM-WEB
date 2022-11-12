@@ -126,8 +126,13 @@
     padding: 15px;
 }
 
-.kategori-box img{
-    width: 10%;
+.kategori-box p {
+    padding: 10px;
+}
+
+.kategori-box i{
+    padding: 10px;
+    color: #000106;
     cursor: pointer;
 }
 
