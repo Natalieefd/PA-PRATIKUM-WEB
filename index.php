@@ -11,13 +11,13 @@
     <div class="container">
         <div class="content-box">
             <div class="title">
-                <h1 id = "title" ><b>login customer feel my bag</b></h2>
+                <h1 id = "title" ><b>login feel my bag</b></h2>
                 <script>
                     document.getElementById("title").addEventListener("mouseenter", mouseEnter);
                     document.getElementById("title").addEventListener("mouseleave", mouseLeave);
 
                     function mouseEnter(){
-                        document.getElementById("title").style.color="blue";
+                        document.getElementById("title").style.color = "#ba";
                     }
 
                     function mouseLeave(){
@@ -25,18 +25,15 @@
                     }
                 </script>
             </div>
-            <div class="box">
+            <div class="box1">
                 <form method="POST" action="">
-                    <div>
-                        <label>Masukkan username anda: </label><br>
-                        <input name = "username" type = "text" placeholder ="username">
+                    <div class="input-box">
+                        <label>Masukkan username</label><br>
+                        <input name = "username" type = "text" placeholder ="username"><br><br>
+                        <label>Masukkan password</label><br>
+                        <input name ="password" type = "password" placeholder ="password"><br><br>
+                        <p>belum memiliki akun? <a href="signup.php">Regis</a></p>
                     </div>
-                    <div><br>
-                        <label>Masukkan password: </label><br>
-                        <input name ="password" type = "password" placeholder ="password">
-                    </div>
-                    <p><a href="signup.php">Regis</a> jika belum mempunyai akun</p>
-
                     <div><br>
                         <input type="submit" name="registrasi" value="Submit">
                     </div>

@@ -8,8 +8,28 @@
     <div class="container">
         <div class="content-box">
             <div class="title">
-                <h1>Tambah Pendataan</h1>
+                <h1 id = "tambah">Tambah Pendataan</h1>
+                
+                <script>
+                    document.getElementById("tambah").addEventListener("mouseenter", mouseEnter);
+                    document.getElementById("tambah").addEventListener("mouseleave", mouseLeave);
+
+                    function mouseEnter(){
+                        document.getElementById("tambah").style.color="green";
+                    }
+
+                    function mouseLeave(){
+                        document.getElementById("tambah").style.color = "black";
+                    }
+                </script>
             </div>
+        <div class="menuu">
+            <li><a href="halaman_user.php">home</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="aboutus.html">keranjang</a></li>
+            <li><a href="aboutus.html">about us</a></li>
+        </div>
+            <div class = "content-box1">
             <div class="box">
                 <form action="" method="post" enctype = "multipart/form-data">
                     <label for="">Masukkan warna tas: </label><br>
@@ -22,9 +42,10 @@
                 </form>
             </div>
         </div>
+        </div>
     </div>
     <div class = "outer-footer">
-        Copyright &copy; 2022 Desgin by SherinaLaraswati
+        Copyright &copy; 2022 Desgin by Feel My Bag
     </div>
 
 <?php
@@ -45,7 +66,7 @@
             echo "
                 <script>
                     alert('Data Berhasil Dikirim');
-                    document.location.href='index.php'
+                    document.location.href='tampil.php'
                 </script>
             ";
         }else {
