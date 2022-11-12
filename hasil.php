@@ -23,6 +23,20 @@
     <link rel = "stylesheet" href = "style_hasil.css">
 </head>
 <body>
+<<<<<<< HEAD
+=======
+    <div class="wrapper">
+            <div class="header">
+                <h1 id="FMBW">Feel My Bag</h1>
+            </div>
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Kategori</li>
+                <li><a href="aboutus.html">Struk</a></li>
+                <li><a href="logout.php">LOGOUT</a></li>
+            </div>
+    </div>
+>>>>>>> d0a6d11ff37d77f1bb54a08ef58c54d606aaf002
     <h2>Pendataan Produk Feel My Bag</h2><br>
         <a href="form.php" style="padding:0.4% 0.8%; background-color:#009900;color:#fff;border-radius:2px;text-decoration:none;">Tambah Data</a><br><br>
         <form class="search" action="" method="get">

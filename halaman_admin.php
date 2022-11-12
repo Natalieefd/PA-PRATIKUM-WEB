@@ -27,11 +27,18 @@
             <nav>
                 <h1 onclick="return warna_nama()" id="FMBW">Feel My Bag</h1>
                 <ul>
+<<<<<<< HEAD
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#" onclick="return tidak_ada()">Product</a></li>
                     <li><a href="aboutus.html">About us</a></li>
                     <!-- <li><a href="#" onclick="return tidak_ada()">Sign up/log in</a></li> -->
                     <li><a href="form.php">Pendataan Produk</a></li>
+=======
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="aboutus.php">About us</a></li>
+                    <!-- <li><a href="#" onclick="return tidak_ada()">Sign up/log in</a></li> -->
+                    <li><a href="hasil.php">Pendataan Produk</a></li>
+>>>>>>> d0a6d11ff37d77f1bb54a08ef58c54d606aaf002
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
                 <img src="moon.png" id="icon">

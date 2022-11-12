@@ -24,7 +24,7 @@
 </body>
 </html>
 
-<?php 
+<?php   
     session_start();
     require 'koneksi.php';
 

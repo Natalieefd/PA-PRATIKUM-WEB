@@ -46,6 +46,7 @@
 
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
+<<<<<<< HEAD
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -53,12 +54,39 @@
         <link rel = "stylesheet" href = "style_form.css">
     </head>
     <body>
+=======
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Feel My Bag</title>
+    <link rel = "stylesheet" href = "style_form.css">
+</head>
+<body>  
+    <div class="wrapper">
+        <div class="header">
+            <h1 id="FMBW">Feel My Bag</h1>
+        </div>
+        <div class="menu">
+            <li><a href="halaman_admin.html">home</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="struk.php">Struk</a></li>
+            <!-- <li><a href="">keranjang</a></li> -->
+            <li><a href="aboutus.html">about us</a></li>
+            <!-- <li><a href="logout.php">LOGOUT</a></li> -->
+        </div>
+    </div>
+>>>>>>> d0a6d11ff37d77f1bb54a08ef58c54d606aaf002
         <div class="container">
             <h2>Tambah Data Produk Feel My Bag</h2>
             <div class="form_fmb">
-            <a href="hasil.php" style="padding:0.4% 0.8%; background-color:#009900;color:#fff;border-radius:2px;text-decoration:none;">Data Feel My Bag</a><br>
+            <a href="hasil.php">Data Feel My Bag</a><br>
+            </div>
             <form action="" method="POST" enctype = "multipart/form-data">
+<<<<<<< HEAD
                 <table style="text-align:center;widht:100%;background-color:#f2d6f2">
+=======
+                <div class="tabel_form">
+>>>>>>> d0a6d11ff37d77f1bb54a08ef58c54d606aaf002
                     <!-- <tr>   
                         <td>id</td>
                         <td><input type="text" name="id_tas" placeholder="id" required></td>
@@ -111,6 +139,9 @@
                     </tr>
                     <br>
                         <td><button type="submit" name="submit" value="submit">Submit </button></td>
+                </div>
+                <table>
+                    
                 </table>
             </form>
         </div>
