@@ -21,6 +21,17 @@
     </head>
 
     <body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 id="FMBW">Feel My Bag</h1>
+        </div>
+    <div class="menu">
+            <li><a href="halaman_admin.php">home</a></li>
+            <li><a href="product.php">product</a></li>
+            <li><a href="kategori.php">Data Kategori</a></li>
+            <li><a href="hasil.html">Data Product</a></li>
+    </div>
+    </div>
     <div class="section">
         <div class="container">
         <a href="kategori.php" style="padding:0.4% 0.8%; background-color:#009900;color:#fff;border-radius:2px;text-decoration:none;">Tambah Data Kategori Feel My Bag</a><br>

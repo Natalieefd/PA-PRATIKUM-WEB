@@ -58,21 +58,18 @@
             <h1 id="FMBW">Feel My Bag</h1>
         </div>
         <div class="menu">
-            <li><a href="halaman_admin.html">home</a></li>
-            <li><a href="product.html">product</a></li>
-            <li><a href="struk.php">Struk</a></li>
-            <!-- <li><a href="">keranjang</a></li> -->
-            <li><a href="aboutus.html">about us</a></li>
-            <!-- <li><a href="logout.php">LOGOUT</a></li> -->
+            <li><a href="halaman_admin.php">home</a></li>
+            <li><a href="product.php">product</a></li>
+            <li><a href="kategori.php">Data Kategori</a></li>
+            <li><a href="hasil.html">Data Product</a></li>
         </div>
     </div>
         <div class="container">
             <h2>Tambah Data Produk Feel My Bag</h2>
             <div class="form_fmb">
-            <a href="hasil.php">Data Feel My Bag</a><br>
-            </div>
+            <a href="hasil.php" style="padding:0.4% 0.8%; background-color:#009900;color:#fff;border-radius:2px;text-decoration:none;">Data Feel My Bag</a><br>
             <form action="" method="POST" enctype = "multipart/form-data">
-                <div class="tabel_form">
+                <table>
                     <!-- <tr>   
                         <td>id</td>
                         <td><input type="text" name="id_tas" placeholder="id" required></td>
@@ -125,9 +122,6 @@
                     </tr>
                     <br>
                         <td><button type="submit" name="submit" value="submit">Submit </button></td>
-                </div>
-                <table>
-                    
                 </table>
             </form>
         </div>
