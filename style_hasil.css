@@ -22,44 +22,6 @@ tbody {
     border-color: inherit;
 }
 
-h2 {
-    padding-top: 5px;
-    text-align: center;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    border-bottom: 2px solid;
-}
- 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
-}
-
-.menu li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu li a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #000106;
-}
-
 .hasil{
     font-size: 15px;
     background: rgb(248, 246, 246);
@@ -71,34 +33,18 @@ h2 {
 .search{
     font-family:monospace;
     color:rgb(96, 82, 82);
-    font-weight: 3500;
+    font-weight: 300;
     font-size: 15px;
     text-align: center;
-    padding: 5px 10px 10px 10px;
-    height: 35px;
+    height: 20px;
     background-color: rgb(246, 207, 246);
     border-radius: 90px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.search input {
-    width: 50%;
-    padding: 5px 10px 5px 10px;
-    border: none;
-    outline: none;
-    background-color: none;
-    border-radius: 5px;
-}
-
 .search placeholder{
     color: rgb(0, 0, 0);
 }
-
 .search input{
     color: rgb(0, 0, 0);
-}
-
-.table-box {
-    /* padding: 15px; */
-    background-color: none;
 }

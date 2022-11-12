@@ -6,7 +6,7 @@
 
     if(isset($_POST['submit']))
     {
-        $id_kategori = $_POST['kategori'];
+        $id_kategori = $_POST['id_kategori'];
         $nama = $_POST['merk_tas'];
         $deskripsi_tas = $_POST['deskripsi_tas'];
         $warna = $_POST['warna'];
@@ -46,30 +46,19 @@
 
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
-<head>
-    <meta charset = "utf-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Feel My Bag</title>
-    <link rel = "stylesheet" href = "style_form.css">
-</head>
-<body>  
-    <div class="wrapper">
-        <div class="header">
-            <h1 id="FMBW">Feel My Bag</h1>
-        </div>
-        <div class="menu">
-            <li><a href="halaman_admin.php">home</a></li>
-            <li><a href="product.php">product</a></li>
-            <li><a href="kategori.php">Data Kategori</a></li>
-            <li><a href="hasil.html">Data Product</a></li>
-        </div>
-    </div>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Feel My Bag</title>
+        <link rel = "stylesheet" href = "style_form.css">
+    </head>
+    <body>
         <div class="container">
             <h2>Tambah Data Produk Feel My Bag</h2>
             <div class="form_fmb">
             <a href="hasil.php" style="padding:0.4% 0.8%; background-color:#009900;color:#fff;border-radius:2px;text-decoration:none;">Data Feel My Bag</a><br>
             <form action="" method="POST" enctype = "multipart/form-data">
-                <table>
+                <table style="text-align:center;widht:100%;background-color:#f2d6f2">
                     <!-- <tr>   
                         <td>id</td>
                         <td><input type="text" name="id_tas" placeholder="id" required></td>
@@ -83,7 +72,7 @@
                                     $kategori = mysqli_query($db, "SELECT * FROM kategori ORDER BY id_kategori DESC");
                                     while($r = mysqli_fetch_array($kategori)){
                                 ?>
-                                <option value="<?php echo $r['id_kategori']?>"> <?php echo $r['nama_kategori']?></option>
+                                <option value="<?php echo $r['id_kategori']?>"><?php echo $r['nama_kategori']?></option>
                                 <?php } ?>
                             </select>
                         </td>
@@ -125,5 +114,5 @@
                 </table>
             </form>
         </div>
-</body>
+    </body>
 </html>

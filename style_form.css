@@ -15,66 +15,22 @@ body{
     align-items: center;
 }
 
-
-
 tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
+.form_fmb{
+    font-size: 15px;
+    background: rgb(248, 246, 246);
+    color: black;
+    /* position: absolute; */
+    padding: auto;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.table {
     padding: 10px;
-}
-
-#FMBW {
-    align-items: center;
-    justify-content: space-between;
-    top: 70px;
-    margin: 0;
-    font-size: 30px;
-    color: var(--secondary-color);
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
-}
-
-.menu li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu li a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #000106;
-}
-
-table{
-    text-align:center;
-    width:100%;
 }
 
 .container {
@@ -85,34 +41,6 @@ table{
 }
 
 .container h2 {
-    padding: 20px;
-    align-items: center;
-    height: inherit;
+    padding-bottom: 20px;
+
 }
-
-
-.form_fmb {
-    font-size: 15px;
-    padding: auto;
-    padding: 40px 80px;
-    border-radius: 2px;
-    text-decoration: none;
-    background-color: lavenderblush;
-    width: auto;
-}
-
-
-
-.table {
-    padding: 10px;
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: grey;
-    width: 100%;
-}
-
-
-
