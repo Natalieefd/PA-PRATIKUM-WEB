@@ -11,29 +11,20 @@
     <div class="container">
         <div class="content-box">
             <div class="title">
-                <h1 id = "title" ><b>login feel my bag</b></h2>
-                <script>
-                    document.getElementById("title").addEventListener("mouseenter", mouseEnter);
-                    document.getElementById("title").addEventListener("mouseleave", mouseLeave);
-
-                    function mouseEnter(){
-                        document.getElementById("title").style.color = "#ba";
-                    }
-
-                    function mouseLeave(){
-                        document.getElementById("title").style.color = "black";
-                    }
-                </script>
+                <h1><b>login customer feel my bag</b></h2>
             </div>
-            <div class="box1">
+            <div class="box">
                 <form method="POST" action="">
-                    <div class="input-box">
-                        <label>Masukkan username</label><br>
-                        <input name = "username" type = "text" placeholder ="username"><br><br>
-                        <label>Masukkan password</label><br>
-                        <input name ="password" type = "password" placeholder ="password"><br><br>
-                        <p>belum memiliki akun? <a href="signup.php">Regis</a></p>
+                    <div>
+                        <label>Masukkan username anda: </label><br>
+                        <input name = "username" type = "text" placeholder ="username">
                     </div>
+                    <div><br>
+                        <label>Masukkan password: </label><br>
+                        <input name ="password" type = "password" placeholder ="password">
+                    </div>
+                    <p><a href="signup.php">Regis</a> jika belum mempunyai akun</p>
+
                     <div><br>
                         <input type="submit" name="registrasi" value="Submit">
                     </div>
@@ -42,15 +33,13 @@
         </div>
     </div>
     <div class = "outer-footer">
-        Copyright &copy; 2022 Desgin by Feel My Bag Team
+        Copyright &copy; 2022 Desgin by SherinaLaraswati
     </div>
 </body>
 </html>
 
 <?php
     require 'koneksi.php';
-
-    session_start();
     if(isset($_POST['registrasi'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
