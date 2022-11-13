@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet"  href = "Pendataan.css">
-    <title>Login Admin</title>
+    <link rel ="stylesheet"  href = "pendataan.css">
+    <title>Feel My Bag</title>
 </head>
 <body>
     <div class="container">
+        <div class="title">
+            <h1>login feel my bag</h1>
+        </div>
         <div class="content-box">
-            <div class="title">
-                <h1><b>login customer feel my bag</b></h2>
-            </div>
-            <div class="box">
+            <div class="box-login">
                 <form method="POST" action="">
-                    <div>
-                        <label>Masukkan username anda: </label><br>
-                        <input name = "username" type = "text" placeholder ="username">
+                    <div class="usn">
+                        <label>Masukkan username</label><br><br>
+                        <input name="username" type="text" placeholder="username">
                     </div>
-                    <div><br>
-                        <label>Masukkan password: </label><br>
-                        <input name ="password" type = "password" placeholder ="password">
-                    </div>
-                    <p><a href="signup.php">Regis</a> jika belum mempunyai akun</p>
+                    <div class="psw"><br>
+                        <label>Masukkan password</label><br><br>
+                        <input name="password" type="password" placeholder="password">
+                    </div class="link"><br>
+                    <p>belum mempunyai akun? <a href="signup.php">Regis</a></p>
 
-                    <div><br>
+                    <div class="smb"><br>
                         <input type="submit" name="registrasi" value="Submit">
                     </div>
                 </form>
@@ -33,13 +33,14 @@
         </div>
     </div>
     <div class = "outer-footer">
-        Copyright &copy; 2022 Desgin by SherinaLaraswati
+        Copyright &copy; 2022 Desgin by Feel My Bag Team
     </div>
 </body>
 </html>
 
 <?php
     require 'koneksi.php';
+
     if(isset($_POST['registrasi'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -53,20 +54,15 @@
                         document.location.href ='halaman_user.php'
                     </script>";
             }else{
-                echo "
-                <script>
+                echo "<script>
                     alert(' PASSWORD SALAH ... !! ');
                 </script> ";
             }
 
         }else{
-            echo "
-                <script>
+            echo "<script>
                     alert(' USERNAME TIDAK TERDAFTAR..!! ');
-                </script>
-            ";
+                </script>";
         }
     }
-    
-
- ?>
+?>
