@@ -14,31 +14,32 @@
         </div>
         <div class="menu">
             <li><a href="halaman_user.php">home</a></li>
-            <li><a href="product.php">product</a></li>
             <li><a href="keranjang.php">keranjang</a></li>
-            <li><a href="tampil_struk.php">struk</a></li>
+            <li><a href="struk.php">struk</a></li>
             <li><a href="aboutus.html">about us</a></li>
         </div>
     </div>
     <div class="search-box">
         <div class="search">
-                <input type="text" name="search" placehoder="search here...." title="search" class="serach-inpt" value="<?php if(isset($_GET['search'])){ echo $_GET['search'];}?>">
+            <input type="text" name="search" placehoder="search here...." title="search" class="serach-inpt" value="<?php if(isset($_GET['search'])){ echo $_GET['search'];}?>">
         </div>
     </div>
-
+ 
     <div class="container">
+        <div class="content">
         <div class="kategori">
             <div class="kat-text"><h3>Kategori</h3></div>
-            <div class="kategori-box">
-                <?php
-                    include 'koneksi.php';
-                    $kategori = mysqli_query($db, "SELECT * FROM kategori ORDER BY id_kategori");
-                    if($kategori->num_rows > 0){
-                        while($l = mysqli_fetch_array($kategori)){
-                ?>
-                <img src="icon_category.png" alt=""  width="70px">
-                <p class="kat"><?php echo $l['id_kategori'] ?></p>
-                <?php }} ?>
+                <div class="kategori-box">
+                    <?php
+                        include 'koneksi.php';
+                        $kategori = mysqli_query($db, "SELECT * FROM kategori ORDER BY nama_kategori");
+                        if($kategori->num_rows > 0){
+                            while($l = mysqli_fetch_array($kategori)){
+                    ?>
+                    <img src="icon_category.png" alt="" width="50px">
+                    <p class="kat"><?php echo $l['nama_kategori'] ?></p>
+                    <?php }} ?>
+                </div>
             </div>
         </div>
 
@@ -59,13 +60,15 @@
                                     <p class="harga"><?php echo $p['harga'] ?></p>
                                 </div>
                                 <div class="button">
-                                    <div class="add"><a href="#"><i class="fa fa-shopping-cart">keranjang</i></a></div>
-                                    <div class="buy"><a href="#"><i class="fa-solid fa-bag-shopping">beli sekarang</i></a></div>
+                                    <div class="add"><a href="keranjang.php?cart=<?=$p['id_tas']?>" name="cart"><i class="fa fa-shopping-cart">keranjang</i></a></div>
+                                    <input type="hidden" name="tanggal_order" value= <?=date("Y-m-d H:i:s a")?> >
+                                    <div class="buy"><a href="beli.php?buy=<?=$p['id_tas']?>"><i class="fa-solid fa-bag-shopping">beli sekarang</i></a></div>
                                 </div>
                             </div>
                         </a>
-                    <?php }}else{ ?>
-                        <p>Produk tidak ada</p>
+                    <?php 
+                        }}else{ ?>
+                        <br><p>Produk tidak ada</p><br>
                     <?php } ?>
                 </div>
             </div>
@@ -75,5 +78,4 @@
         Copyright &copy; 2022 Designed by Feel My Bag Team
     </div>
 </body>
-
 </html>

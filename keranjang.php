@@ -1,9 +1,3 @@
-<?php
-    session_start();
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="keranjang.css">
-    <title>Keranjang | Feel My Bag</title>
+    <title>Feel My Bag</title>
 </head>
 <body>
     <div class="container">
@@ -22,54 +16,47 @@
                 <h1 id="FMBW">Feel My Bag</h1>
             </div>
             <div class="menu">
-                <li><a href="index.html">home</a></li>
-                <li><a href="product.html">product</a></li>
-                <li><a href="aboutus.html">keranjang</a></li>
+                <li><a href="index.php">home</a></li>
+                <li><a href="product.php">product</a></li>
+                <li><a href="struk.php">struk</a></li>
                 <li><a href="aboutus.html">about us</a></li>
-                <li><a href="logout.php">LOGOUT</a></li>
             </div>
         </div>
     </div>
-    <div class="content">
-        <div class="title">
+    <div class="title">
+        <div class="title-text">
             <div><i class="fa fa-shopping-cart"></i> keranjang</div>
         </div>
-        <div>
-            <table class="main-content">
-                <th>
-                    <tr> No </tr>
-                    <tr> Gambar </tr>
-                    <tr> Nama </tr>
-                    <tr> Jumlah </tr>
-                    <tr> Warna </tr>
-                    <tr> Merk </tr>
-                    <tr> Harga </tr>
-
+    </div>
+    <div class="main-content">
+        <div class="content">
+            <div class="content-box">
+                <table>
                     <?php
                         require 'koneksi.php';
 
-                        if(!empty($_SESSION["cart"])){
-
+                        if (isset($_GET['cart'])){
+                            $cart = $_GET['cart'];
+                            $query = "SELECT * FROM pengguna LEFT JOIN produk ON pengguna.id_pengguna = produk.id_keranjang";
+                            $result = mysqli_query($db, $query);
                         }
-
-                        $result = $db->query("SELECT * FROM produk WHERE id_tas ='$id_tas'");
-                        $query = $db->query($result);
-                        $i = 1;
                         while($row = mysqli_fetch_array($result)){
                     ?>
-                                                                                       
-                    <td><?=$i?></td>
-                    <td><img src="gambar/<?=$row['gambar']?>" width="100px"></td>
-                    <td><?=$row['nama_barang']?></td>
-                    <td><?=$row['jumlah_barang']?></td>
-                    <td><?=$row['warna_barang']?></td>
-                    <td><?=$row['merk_barang']?></td>
-                    <td><?=$row['harga_barang']?></td>
+                    
+                    <!-- <td>?=$i?></td> -->
+                    <div class="cart-box">
+                        <p><img src="Gambar/<?=$row['gambar']?>" width="100px"></p>
+                        <p><?=$row['jumlah_tas']?></p>
+                        <p><?=$row['warna']?></p>
+                        <p><?=$row['merk_tas']?></p>
+                        <p><?=$row['harga']?></p>
+                    </div>
                     <?php
-                        $i++;}
+                        // $i++;
+                        }
                     ?>
-                </th>
-            </table>
+                </table>
+            </div>
         </div>
     </div>
     <div class="footer">
