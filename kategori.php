@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style_kategori.css" />
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Feel My Bag</title>
 </head>
 <body>
@@ -28,10 +29,9 @@
         </div>
         <div class="menu">
             <li><a href="halaman_admin.php">Home</a></li>
-            <li><a href="product.php">Produk</li>
+            <li><a href="product_admin.php">Produk</a></li>
             <li><a href="hasil.php">Data Product</a></li>
             <li><a href="tampil_struct.php">Struk</a></li>
-            <!-- <li><a href="logout.php">LOGOUT</a></li> -->
         </div>
     </div>
     <div class="main-container">
@@ -76,8 +76,20 @@
                 </div>
             </div>
         </div>
-    <div class="footer">
+        <div class="footer">
+        <ul class="footer-sosmed">
+            <ul class="footer-brand">
+                <div class="brand">Feel My Bag</div>
+            </ul>
+            <ul class="footer-about1">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="#https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </ul>
+    <div class="footer-c">
         Copyright &copy; 2022 Designed by Feel My Bag Team
+    </div>
     </div>
 </body>
 </html>
