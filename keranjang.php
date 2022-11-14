@@ -1,9 +1,3 @@
-<?php
-    session_start();
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="keranjang.css">
-    <title>Keranjang | Feel My Bag</title>
+    <title>Feel My Bag</title>
 </head>
 <body>
     <div class="container">
@@ -22,58 +16,86 @@
                 <h1 id="FMBW">Feel My Bag</h1>
             </div>
             <div class="menu">
-                <li><a href="index.html">home</a></li>
-                <li><a href="product.html">product</a></li>
-                <li><a href="aboutus.html">keranjang</a></li>
-                <li><a href="aboutus.html">about us</a></li>
-                <li><a href="logout.php">LOGOUT</a></li>
+                <li><a href="halaman_user.php">home</a></li>
+                <li><a href="product.php">product</a></li>
+                <li><a href="tampil_struk.php">struk</a></li>
+                <li><a href="about_us.php">about us</a></li>
             </div>
         </div>
     </div>
-    <div class="content">
-        <div class="title">
-            <div><i class="fa fa-shopping-cart"></i> keranjang</div>
-        </div>
-        <div>
-            <table class="main-content">
-                <th>
-                    <tr> No </tr>
-                    <tr> Gambar </tr>
-                    <tr> Nama </tr>
-                    <tr> Jumlah </tr>
-                    <tr> Warna </tr>
-                    <tr> Merk </tr>
-                    <tr> Harga </tr>
-
+    <div class="container2">
+        <div class="main-content">
+                    <table border="1" cellspacing="0" class="table">
+                    <thead>
+                        <tr style="text-align:center;font-weight:bold;background-color:#d1d1d1">
+                            <th width="60px";>No</th>
+                            <th>Gambar</th>
+                            <th width="100px">Merk Tas</th>
+                            <th width="100px">Warna Tas</th>
+                            <th width="100px">Jumlah Tas</th>
+                            <th width="100px">Harga Tas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            <div class="content">
+                <div class="content-box">
                     <?php
                         require 'koneksi.php';
+                        session_start();
 
-                        if(!empty($_SESSION["cart"])){
+                        $username = $_SESSION['username'];
+                        if (isset($_GET['cart'])){
+                            $id_tas = $_GET['cart'];
 
+                            $data = mysqli_query($db, "SELECT * FROM FMB WHERE id_tas = '$id_tas'");                            
+                            while ($row = mysqli_fetch_assoc($data)){
+                                $item = $row;
+                            }
+                            $i = 1;
+                            $merk  = $item['merk_tas'];
+                            $warna = $item['warna'];
+                            $gambar = $item['gambar'];
+                            $jumlah_tas = $item['jumlah_tas'];
+                            $harga = $item['harga'];
+                            
+                            mysqli_query($db, "INSERT INTO produk VALUES(default, '$id_tas', '$username', '$merk', '$warna', '$jumlah_tas', '$harga', '$gambar')");
+                    
+                            $result = mysqli_query($db, "SELECT * FROM produk LEFT JOIN pengguna USING (username)");
+                        
                         }
-
-                        $result = $db->query("SELECT * FROM produk WHERE id_tas ='$id_tas'");
-                        $query = $db->query($result);
-                        $i = 1;
                         while($row = mysqli_fetch_array($result)){
                     ?>
-                                                                                       
-                    <td><?=$i?></td>
-                    <td><img src="gambar/<?=$row['gambar']?>" width="100px"></td>
-                    <td><?=$row['nama_barang']?></td>
-                    <td><?=$row['jumlah_barang']?></td>
-                    <td><?=$row['warna_barang']?></td>
-                    <td><?=$row['merk_barang']?></td>
-                    <td><?=$row['harga_barang']?></td>
+                    <tr>
+                        <td align="center"><?=$i;?></td>
+                        <td align="center"><img src="Gambar/<?=$row['gambar']?>" width="100px"></td>
+                        <td align="center"><?=$row['merk_tas']?></td>
+                        <td align="center"><?=$row['warna']?></td>
+                        <td align="center"><?=$row['jumlah_tas']?></td>
+                        <td align="center"><?=$row['harga']?></td>
+                    </tr>
                     <?php
                         $i++;}
                     ?>
-                </th>
-            </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-        Copyright &copy; 2022 Designed by Feel My Bag Team
+        <ul class="footer-sosmed">
+            <ul class="footer-brand">
+                <div class="brand">Feel My Bag</div>
+            </ul>
+            <ul class="footer-about1">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="#https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </ul>
+        <div class="footer-c">
+            Copyright &copy; 2022 Designed by Feel My Bag Team
+        </div>
     </div>
 </body>
 </html>
