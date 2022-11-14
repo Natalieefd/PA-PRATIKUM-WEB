@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95.5vh;
+    background-image: linear-gradient(90deg, rgba(230, 230, 230, 0.4) 0%, rgba(255, 255, 255, 0.7) 50%), url(about.jfif);
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#FMBW {
+    align-items: center;
+    justify-content: space-between;
+    top: 70px;
+    margin: 0;
+    font-size: 30px;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000106;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 40px 100px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow:  0 0px 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: #d4d4d479;
+}
+
+.main-content img {
+    padding-right: 30px;
+    width: 35%;
+}
+
+.outer-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0px;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: black;
+    background-color: #bcb6bc;
+}
