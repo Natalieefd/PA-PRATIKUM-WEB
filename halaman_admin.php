@@ -32,7 +32,7 @@
             <li><a href="product_admin.php">Product</a></li>
             <li><a href="hasil.php">Data Produk</a></li>
             <li><a href="kategori.php">Data kategori</a></li>
-            <li><a href="struct.php">Struk</a></li>
+            <li><a href="about_us_admin.php">About Us</a></li>
             <li><a href="logout.php">LOGOUT</a></li>
         </div>
     </div>
