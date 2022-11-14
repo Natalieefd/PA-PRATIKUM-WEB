@@ -72,6 +72,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.2.css" />
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Form Edit data</title>
 </head>
 <body>
@@ -130,5 +131,8 @@
         </table>
     </div>
     </form>
+    <div class="footer">
+        Copyright &copy; 2022 Designed by Feel My Bag Team
+    </div>
     </body>
 </html>
