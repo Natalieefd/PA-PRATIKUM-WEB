@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 :root{
@@ -18,7 +19,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px;
 }
 
 .wrapper {
@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 2px solid #000106;
     margin: 10px;
 }
 
@@ -50,6 +51,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
 }
 
 .menu li {
@@ -73,7 +75,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin: 20px 0px 20px 0px;
+    margin: 40px 0px 20px 0px;
     border: 5px;
     border-color: #000106;
     background-color: #f1f1f1;
@@ -119,7 +121,55 @@ th .text {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin-top: 40px;
-    background-color: #edf2fc;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
 }
+
+.footer-sosmed {
+    display: flex;
+    justify-content:space-around;
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px 0px 0px 0px;
+    height: 150px;
+    background: #e0e3e8;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    text-transform: capitalize;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: larger;
+}
+
+.footer-about1 li {
+    padding: 10px;
+}
+
+.footer-about1 li a {
+    color: var(--secondary-color);
+    font-size: 15px;
+    text-decoration: none;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+
+.footer-c {
+    text-align: center;
+    width: 100%;
+    height: 15px;  
+    padding: 10px 0px;
+    color: var(--secondary-color);
+    background: #e0e3e8;
+ }
