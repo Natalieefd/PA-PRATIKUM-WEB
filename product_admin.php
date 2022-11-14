@@ -23,7 +23,6 @@ session_start();
             <li><a href="hasil.php">Data Produk</a></li>
             <li><a href="kategori.php">Data Kategori</a></li>
             <li><a href="keranjang.php">keranjang</a></li>
-            <li><a href="struk.php">struk</a></li>
         </div>
     </div>
     <div class="search-box">
