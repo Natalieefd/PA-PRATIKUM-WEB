@@ -30,10 +30,8 @@
         </div>
         <div class="menu">
             <li><a href="halaman_admin.php">Home</a></li>
-            <li><a href="product.php">Produk</a></li>
+            <li><a href="product_admin.php">Produk</a></li>
             <li><a href="hasil.php">Data Product</a></li>
-            <li><a href="tampil_struct.php">Struk</a></li>
-            <li><a href="logout.php">LOGOUT</a></li>
         </div>
     </div>
     <div class="main-container">
