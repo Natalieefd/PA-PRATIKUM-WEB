@@ -72,6 +72,11 @@ tbody {
     color: #000106;
 }
 
+table{
+    text-align:center;
+    width:100%;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -86,14 +91,14 @@ tbody {
 }
 
 
-.form_fmb{
+.form_fmb {
     font-size: 15px;
-    /* background: rgb(248, 246, 246); */
     padding: auto;
-    padding:40px 80px; 
-    background-color:#009900;
-    border-radius:2px;
-    text-decoration:none
+    padding: 40px 80px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: lavenderblush;
+    width: auto;
 }
 
 
@@ -108,5 +113,6 @@ tbody {
     border-color: grey;
     width: 100%;
 }
+
 
 

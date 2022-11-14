@@ -52,7 +52,7 @@
     <div class="container">
         <div class="content-box">
             <div class="title">
-                <h3>Edit Pendataan SmartWatch</h3>
+                <h3>Edit Data Tas</h3>
             </div>
             <div class="box">
                 <form action="" method="post">
@@ -68,7 +68,7 @@
         </div>
     </div>
     <div class = "outer-footer">
-        Copyright &copy; 2022 Desgin by SherinaLaraswati
+        Copyright &copy; 2022 Desgin by Feel My Bag Team
     </div>
 </body>
 </html>

@@ -1,7 +1,4 @@
 <?php 
-    require 'koneksi.php';
-
-    $result = mysqli_query($db, "SELECT * FROM fmb");
 
     require 'koneksi.php';
                         $result = mysqli_query($db, "SELECT * FROM fmb LEFT JOIN kategori USING (id_kategori)");
@@ -28,10 +25,11 @@
                 <h1 id="FMBW">Feel My Bag</h1>
             </div>
             <div class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Kategori</li>
+                <li><a href="halaman_admin.php">Home</a></li>
+                <li><a href="product.php">Product</a></li>
+                <li><a href="kategori.php">Data Kategori</li>
                 <li><a href="aboutus.html">Struk</a></li>
-                <li><a href="logout.php">LOGOUT</a></li>
+                <!-- <li><a href="logout.php">LOGOUT</a></li> -->
             </div>
     </div>
     <h2>Pendataan Produk Feel My Bag</h2><br>
@@ -87,6 +85,10 @@
                 </table>
             </div>
         </div>
-        </form>
+        </form>  
+    <footer>
+        Copyright &copy; 2022
+        Designed by Feel My Bag Team
+    </footer>
 </body>
 </html>

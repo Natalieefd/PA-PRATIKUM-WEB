@@ -8,30 +8,41 @@
     <link rel ="stylesheet"  href = "Pendataan.css">
 </head>
 <body>
-    <div class = "reg">
-        <b>Registrasi akun</b>
-        <form action="" method="post">
-
-            <label for="email">Email</label><br>
-            <input type="text" name="email" id = "email" placeholder ="sey@gmail.com" required><br><br>
-
-            <label for="nama">Nama</label><br>
-            <input type="text" name="nama" id = "nama" placeholder ="Seyina Humaira" required ><br><br>
-
-            <label for="username">username</label><br>
-            <input type="text" name="username" id = "username" placeholder ="Seysey"required ><br><br>
-
-            <label for="password">password</label><br>
-            <input type="password" name="password" id = "password" placeholder ="***" required><br><br>
-
-            <label for="konfirmasi">konfirmasi password</label><br>
-            <input type="password" name="konfirmasi" id = "password" placeholder ="***"required><br><br>
-
-            <input type="submit" name="register" id = "register">
-
-        </form> 
-    </div>
     
+    <div class = "container">
+        <div class="regiss">
+            <b>Registrasi akun</b>
+        </div>
+        <div class="regist-box">
+            <div class="box">
+                <form action="" method="post">
+                    <div class="input-box">
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id = "email" placeholder ="sey@gmail.com" required><br><br>
+
+                        <label for="nama">Nama</label><br>
+                        <input type="text" name="nama" id = "nama" placeholder ="Seyina Humaira" required ><br><br>
+
+                        <label for="username">username</label><br>
+                        <input type="text" name="username" id = "username" placeholder ="Seysey"required ><br><br>
+
+                        <label for="password">password</label><br>
+                        <input type="password" name="password" id = "password" placeholder ="***" required><br><br>
+
+                        <label for="konfirmasi">konfirmasi password</label><br>
+                        <input type="password" name="konfirmasi" id = "password" placeholder ="***"required><br><br>
+                    </div>
+                    <div><br>
+                        <input type="submit" name="register" value="register">
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; 2022
+        Designed by Feel My Bag Team
+    </footer>
 </body>
 </html>
 

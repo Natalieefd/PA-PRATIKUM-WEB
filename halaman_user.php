@@ -5,21 +5,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style3.css" />
     <title>Feel My Bag</title>
 </head>
 
 <body>
     <section>
+    
+    <h1 id  = "nama">Feel My Bag</h1>
+    <script>
+        document.getElementById("nama").addEventListener("mouseenter", mouseEnter);
+        document.getElementById("nama").addEventListener("mouseleave", mouseLeave);
+
+        function mouseEnter(){
+            document.getElementById("nama").style.color="pink";
+        }
+
+        function mouseLeave(){
+            document.getElementById("nama").style.color = "black";
+        }
+    </script>
         <header class="container">
             <nav>
-                <h1 onclick="return warna_nama()" id="FMBW">Feel My Bag</h1>
-            
-
                 <ul>
                     <li><a href="product.php">Product</a></li>
                     <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="index.php">Logout</a></li>
                 </ul>
                 <img src="moon.png" id="icon">
             </nav>
@@ -60,10 +71,8 @@
         var icon = document.getElementById("icon");
         icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
-
             var x = document.getElementById("icon").src;
             var y = x.replace(/^.*[\\\/]/, ''); 
-
             if(y == "moon.png"){
                 icon.src = "sun.png";
                 document.getElementById("FMBW").style.color = "white";
@@ -73,7 +82,6 @@
             };
     
         }
-
         function warna_nama(){
             document.getElementById("FMBW").style.color = "rgb(162, 127, 127)";
         }
@@ -85,5 +93,4 @@
     </div>
     </header>
 </body>
-
 </html>
