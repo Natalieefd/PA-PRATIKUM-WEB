@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2022 at 02:31 PM
+-- Generation Time: Nov 14, 2022 at 03:57 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -71,7 +71,8 @@ INSERT INTO `fmb` (`id_tas`, `id_kategori`, `merk_tas`, `deskripsi_tas`, `warna`
 (12, 65, 'stella rossa', 'simple sling bag', 'green', 4, '11-11-2022', 96000, 'stella-rossa-green.png'),
 (15, 22, 'michael kors', 'cute pink bag', 'pink', 4, '11-11-2022', 102000, 'michael-kors-.png'),
 (21, 44, 'hush puppies', 'sling bag blue cute', 'blue', 2, '11-11-2022', 92000, 'hush-puppies-blue.png'),
-(38, 0, 'enji', 'beauty backpack', 'cream', 1, '11-11-22 11:30:10 am', 156000, 'enji.png');
+(38, 0, 'enji', 'beauty backpack', 'cream', 1, '11-11-22 11:30:10 am', 156000, 'enji.png'),
+(39, 1, 'hush puppies', 'elegan', 'maroon', 5, '14-11-22 22:52:52 pm', 127000, 'hush puppies.png');
 
 -- --------------------------------------------------------
 
@@ -136,15 +137,6 @@ CREATE TABLE `produk` (
   `gambar` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `produk`
---
-
-INSERT INTO `produk` (`id_keranjang`, `id_tas`, `username`, `merk_tas`, `warna`, `jumlah_tas`, `harga`, `gambar`) VALUES
-(4, 12, 're', 'stella rossa', 'green', 4, 96000, 'stella-rossa-green.png'),
-(8, 11, '', 'rubi', 'white blue', 3, 68000, 'rubi.png'),
-(10, 21, 're', 'hush puppies', 'blue', 2, 92000, 'hush-puppies-blue.png');
-
 -- --------------------------------------------------------
 
 --
@@ -160,13 +152,6 @@ CREATE TABLE `struk` (
   `warna` varchar(30) NOT NULL,
   `harga` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `struk`
---
-
-INSERT INTO `struk` (`id_tas`, `username`, `tanggal_order`, `merk_tas`, `jumlah_tas`, `warna`, `harga`) VALUES
-(12, '', '2022-11-14 05:08:12', 'stella rossa', 0, '4', 96000);
 
 --
 -- Indexes for dumped tables
@@ -220,7 +205,7 @@ ALTER TABLE `struk`
 -- AUTO_INCREMENT for table `fmb`
 --
 ALTER TABLE `fmb`
-  MODIFY `id_tas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id_tas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `kategori`
@@ -232,7 +217,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
