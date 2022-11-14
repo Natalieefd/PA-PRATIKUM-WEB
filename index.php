@@ -42,6 +42,7 @@
 <?php
     require 'koneksi.php';
 
+    session_start();
     if(isset($_POST['registrasi'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
