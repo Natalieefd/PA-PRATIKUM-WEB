@@ -38,7 +38,7 @@
                         <input type="password" name="konfirmasi" id="password" placeholder="konfirmasi password"required><br><br>
                     </div>
                     <div><br>
-                        <p>belum mempunyai akun? <a href="signup.php">Regis</a></p>
+                        <p>sudah mempunyai akun? <a href="index.php">Log In</a></p>
                     </div>
                     <div class="smb"><br>
                         <input type="submit" name="register" id = "register">
