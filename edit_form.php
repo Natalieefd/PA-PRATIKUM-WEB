@@ -76,7 +76,18 @@
     <title>Form Edit data</title>
 </head>
 <body>
-    <h2>Edit Produk Feel My Bag</h2><br>
+    <div class="wrapper">
+            <div class="header">
+                <h1 id="FMBW">Feel My Bag</h1>
+            </div>
+            <div class="menu">
+                <li><a href="halaman_admin.php">Home</a></li>
+                <li><a href="product_admin.php">Product</a></li>
+                <li><a href="kategori.php">Data Kategori</li>
+                <li><a href="hasil.php">Data Produk</a></li>
+            </div>
+        </div>
+    <!-- <h2>Edit Produk Feel My Bag</h2><br> -->
     <div class="box_login">
     <a href="hasil.php" style="padding:0.4% 0.8%; background-color:#009900;color:#fff;border-radius:2px;text-decoration:none;">Data Feel My Bag</a><br>
     <form action="" method="POST" enctype = "multipart/form-data">
@@ -131,8 +142,8 @@
         </table>
     </div>
     </form>
-    <div class="footer">
+    <!-- <div class="footer">
         Copyright &copy; 2022 Designed by Feel My Bag Team
-    </div>
+    </div> -->
     </body>
 </html>
