@@ -14,10 +14,10 @@
             <h1 id="FMBW">Feel My Bag</h1>
         </div>
         <div class="menu">
-            <li><a href="index.php">home</a></li>
+            <li><a href="halaman_user.php">home</a></li>
             <li><a href="product.php">product</a></li>
             <li><a href="keranjang.php">keranjang</a></li>
-            <li><a href="aboutus.html">about us</a></li>
+            <li><a href="about_us.php">about us</a></li>
         </div>
     </div>
     
