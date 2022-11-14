@@ -22,7 +22,6 @@ session_start();
             <li><a href="halaman_admin.php">home</a></li>
             <li><a href="hasil.php">Data Produk</a></li>
             <li><a href="kategori.php">Data Kategori</a></li>
-            <li><a href="keranjang.php">keranjang</a></li>
         </div>
     </div>
     <div class="search-box">
