@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style4.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Login Admin</title>
 </head>
 <body>
 <body id="bg_login">
     <div class="box_login">
+    <li><center><a href="index.php"><img src="moon.png" alt="" width="20px"></a></center></li>
     <h1>Login</h1>
     <form action="" method="post">
         <input type="text" name="username" class="form_login" placeholder="Username" required="" >
@@ -20,7 +22,7 @@
 </body>
 </html>
 
-<?php   
+<?php 
     session_start();
     require 'koneksi.php';
 
