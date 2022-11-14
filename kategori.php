@@ -18,8 +18,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style_kategori.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_kategori.css" />
     <title>Feel My Bag</title>
 </head>
 <body>
@@ -29,9 +30,10 @@
         </div>
         <div class="menu">
             <li><a href="halaman_admin.php">Home</a></li>
-            <li><a href="product_admin.php">Produk</a></li>
+            <li><a href="product.php">Produk</a></li>
             <li><a href="hasil.php">Data Product</a></li>
             <li><a href="tampil_struct.php">Struk</a></li>
+            <li><a href="logout.php">LOGOUT</a></li>
         </div>
     </div>
     <div class="main-container">
