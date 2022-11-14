@@ -36,6 +36,13 @@ h3 {
     margin: 10px 0 25px 0;
 }
 
+.box2{
+    border: 60px solid pink;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+
 
 .wrapper {
     display: flex;
