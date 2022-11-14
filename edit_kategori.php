@@ -23,6 +23,7 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Feel My Bag</title>
         <link rel = "stylesheet" href = "style_kategori.css">
+        <link rel="icon" href="logo.ico" type="image/x-icon">
     </head>
 
     <body>
@@ -44,7 +45,9 @@
             </div>
         </div>
     </div>
-    </form>
+    <div class="footer">
+        Copyright &copy; 2022 Designed by Feel My Bag Team
+    </div>
     </body>
 </html>
 
