@@ -4,10 +4,6 @@
     font-family: sans-serif;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 :root{
     --primary-color: #edf2fc;
     --secondary-color: #212121;
@@ -18,13 +14,17 @@
     --secondary-color: #fff;
 }
 
+body {
+    max-width: 1900px;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 2px solid;
-    background-color: #d8deec;
+    border-bottom: 1px solid;
+    background-color: #c9d4ec;
 }
 
 .header {
@@ -32,8 +32,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid;
-    background-color: #d5dbe7;
+    /* border-bottom: 1px solid;  */
+    background-color: #c0cce5;
 }
 
 #FMBW {
@@ -89,16 +89,15 @@
     align-items: center;
     width: 100%;
     padding: 10px 0px 10px 0px;
-    background-color: #edf2fc;
+    background-color: #d8deec;
     box-shadow: 0 7px 15px 0 rgba(241, 241, 241, 0.1);
 }
 
 .search input {
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     outline: none;
-    width: 100%;
-    padding: 2px;
+    padding: 5px;
 }
 
 .container {
@@ -111,11 +110,13 @@
 }
 
 .kategori {
-    display: flex;
+    display: grid;
+    max-width: 1900px;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 15px 15px 0px 15px;
+    padding-top: 15px;
 }
 
 .kategori-box {
@@ -126,8 +127,9 @@
     padding: 15px;
 }
 
-.kategori-box img{
-    width: 10%;
+.kat {
+    padding: 5px;
+    color: #000106;
     cursor: pointer;
 }
 
@@ -140,11 +142,19 @@
 
 .box {
     display: grid;
-    grid-template-columns: repeat(4, 0px 1fr);
+    max-width: 1900px;
+    gap: 1em;
+    /* grid-template-columns: repeat(4, 0px 1fr); */
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #000106;
+    /* color: #000106; */
+}
+
+@media (min-width: 800px) {
+    .box {grid-template-columns: repeat(2, 0px, 1fr); }
+    .kategori {grid-template-columns: repeat(2, 0px, 1fr);}
+    .button {grid-template-columns: repeat(1, 0px, 1fr);}
 }
 
 .catalog-box {
@@ -157,7 +167,6 @@
     background-color: #d5dbe7;
     border: 0.5px solid #8b929e;
     border-radius: 5px;
-    box-shadow: 0 7px 15px 0 rgba(241, 241, 241, 0.3);
 }
 
 .catalog-box a {
@@ -177,10 +186,9 @@
 }
 
 .button {
-    display: flex;
+    display: contents;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     text-transform: capitalize;
 }
 
@@ -194,6 +202,7 @@
     border: 0.5px solid #8b929e;
     color: #212121;
     border-radius: 5px;
+    font-size: small;
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -207,6 +216,7 @@
     border: 0.5px solid #8b929e;
     color: #212121;
     border-radius: 5px;
+    font-size: small;
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -217,5 +227,5 @@
     align-items: center;
     padding: 8px;
     font-size: small;
-    background-color: #edf2fc;
+    background-color: #bcb6bc;
 }
