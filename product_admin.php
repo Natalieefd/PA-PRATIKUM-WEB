@@ -37,10 +37,6 @@ session_start();
                     <?php
                         include 'koneksi.php';
 
-                        if (isset($_GET['search'])){
-                            $kategori = mysqli_query($db, "SELECT * FROM kategori WHERE nama_kategori LIKE '%".
-                                $_GET['search']."%'");
-
                         $product = mysqli_query($db, "SELECT * FROM fmb WHERE jumlah_tas > 0");
                         if(mysqli_num_rows($product) > 0){
                             while($p= mysqli_fetch_array($product)){
@@ -62,7 +58,7 @@ session_start();
                             </div>
                         </a>
                     <?php 
-                        }}}else{ ?>
+                        }}else{ ?>
                         <br><p>Produk tidak ada</p><br>
                     <?php } ?>
                 </div>
