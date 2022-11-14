@@ -30,7 +30,7 @@
             <li><a href="halaman_admin.php">home</a></li>
             <li><a href="product.php">product</a></li>
             <li><a href="kategori.php">Data Kategori</a></li>
-            <li><a href="hasil.html">Data Product</a></li>
+            <li><a href="hasil.php">Data Product</a></li>
     </div>
     </div>
     <div class="section">
@@ -53,9 +53,6 @@
                 </table>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        Copyright &copy; 2022 Designed by Feel My Bag Team
     </div>
 </body>
 
