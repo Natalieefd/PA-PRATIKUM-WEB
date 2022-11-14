@@ -4,45 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Document</title>
-    <link rel ="stylesheet"  href = "Pendataan.css">
+    <link rel ="stylesheet"  href="style_signup.css">
 </head>
 <body>
-    
-    <div class = "container">
-        <div class="regiss">
-            <b>Registrasi akun</b>
+    <div class="container">
+        <div class="title">
+            <h1>sign up feel my bag</h1>
         </div>
-        <div class="regist-box">
-            <div class="box">
-                <form action="" method="post">
-                    <div class="input-box">
-                        <label for="email">Email</label><br>
-                        <input type="text" name="email" id = "email" placeholder ="sey@gmail.com" required><br><br>
-
-                        <label for="nama">Nama</label><br>
-                        <input type="text" name="nama" id = "nama" placeholder ="Seyina Humaira" required ><br><br>
-
-                        <label for="username">username</label><br>
-                        <input type="text" name="username" id = "username" placeholder ="Seysey"required ><br><br>
-
-                        <label for="password">password</label><br>
-                        <input type="password" name="password" id = "password" placeholder ="***" required><br><br>
-
-                        <label for="konfirmasi">konfirmasi password</label><br>
-                        <input type="password" name="konfirmasi" id = "password" placeholder ="***"required><br><br>
+        <div class="content-box">
+            <div class="box-login">
+                <form method="POST" action="">
+                    <div class="nm">
+                        <label for="nama">Masukkan Nama</label><br><br>
+                        <input type="text" name="nama" id="nama" placeholder="nama lengkap"required><br><br>
+                    </div>
+                    <div class="eml"><br>
+                        <label for="email">Masukkan Email</label><br><br>
+                        <input type="text" name="email" id="email" placeholder="username@gmail.com"required><br><br>
+                    </div>
+                    <div class="usern"><br>
+                        <label for="username">Masukkan Username</label><br><br>
+                        <input type="text" name="username" id="username" placeholder="username"required><br><br>
+                    </div>
+                    <div class="pass"><br>
+                        <label>Masukkan Password</label><br><br>
+                        <input name="password" type="password" placeholder="password"required><br><br>
+                    </div>
+                    <div class="kpsw"><br>
+                        <label for="konfirmasi">Konfirmasi Password</label><br><br>
+                        <input type="password" name="konfirmasi" id="password" placeholder="konfirmasi password"required><br><br>
                     </div>
                     <div><br>
-                        <input type="submit" name="register" value="register">
+                        <p>belum mempunyai akun? <a href="signup.php">Regis</a></p>
                     </div>
-                </form> 
+                    <div class="smb"><br>
+                        <input type="submit" name="register" id = "register">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <footer>
-        Copyright &copy; 2022
-        Designed by Feel My Bag Team
-    </footer>
+    <div class = "outer-footer">
+        Copyright &copy; 2022 Desgin by Feel My Bag Team
+    </div>
+    </div>
+    
 </body>
 </html>
 
